@@ -2,16 +2,16 @@ AZUREPAT=$AZUREPAT
 AZUSERNAME=$AZUSERNAME
 AZUSER_EMAIL=$AZUSER_EMAIL
 AZORG=$AZORG
-git clone https://github.com/harishlalwani/testAzureDevops
-cd testAzureDevops
+git clone https://github.com/dariemcarlosdev/eHandbookApp
+cd eHandbookApp
 rm -rf .git
 
 cd ..
 
-GIT_CMD_REPOSITORY="https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/TestGitSync/_git/TestGitSync"
+GIT_CMD_REPOSITORY="https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookapp"
 git clone $GIT_CMD_REPOSITORY
 
-cp -r testAzureDevops/* TestGitSync/
+cp -r eHandbookApp/* eHandbookApp/
 
 cd TestGitSync
 
