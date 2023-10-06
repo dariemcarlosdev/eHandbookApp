@@ -12,7 +12,7 @@ rm -rf eHandbookApp/.git
 git fetch --unshallow
 
 # Pull changes from Azure DevOps if its exiting branch and have commits on it
-git pull https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookApp
+# git pull https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookApp
 
 #git checkout -b $github_to_azure_sync
 
