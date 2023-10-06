@@ -5,10 +5,10 @@ AZUSERNAME=$AZUSERNAME
 AZUSER_EMAIL=$AZUSER_EMAIL
 AZORG=$AZORG
 
-echo ${{secrets.AZUREPAT}} | sed 's/ //g'
-echo ${{secrets.AZUSERNAME}} | sed 's/ //g'
-echo ${{secrets.AZUSER_EMAIL}} | sed 's/ //g'
-echo ${{secrets.AZORG}} | sed 's/ //g'
+echo ${{vars.AZUREPAT}} | sed 's/ //g'
+echo ${{vars.AZUSERNAME}} | sed 's/ //g'
+echo ${{vars.AZUSER_EMAIL}} | sed 's/ //g'
+echo ${{vars.AZORG}} | sed 's/ //g'
 
 # Remove Git information (for fresh git start)
 rm -rf eHandbookApp/.git
