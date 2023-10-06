@@ -1,3 +1,5 @@
+#!/bin/bash
+
 AZUREPAT=$AZUREPAT
 AZUSERNAME=$AZUSERNAME
 AZUSER_EMAIL=$AZUSER_EMAIL
@@ -10,15 +12,15 @@ rm -rf eHandbookApp/.git
 git fetch --unshallow
 
 # Pull changes from Azure DevOps if its exiting branch and have commits on it
-git pull https://MDPCS:twoy32zpktxakmuyzzvhvcopvfc25w3t7mglbcwuarzomfhdu4fa@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp
+git pull https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookApp
 
 #git checkout -b $github_to_azure_sync
 
 # Set Git user identity
-git config --global user.email "335286@dadeschools.net"
-git config --global user.name "335286@dadeschools.net"
+git config --global user.email "$AZUSER_EMAIL"
+git config --global user.name "$AZUSERNAME"
 
 # Add all changes into stage, commit, and push to Azure DevOps
 git add .
 git commit -m "Sync from GitHub to Azure DevOps"
-git push --force https://MDPCS:twoy32zpktxakmuyzzvhvcopvfc25w3t7mglbcwuarzomfhdu4fa@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp
+git push --force https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookApp
