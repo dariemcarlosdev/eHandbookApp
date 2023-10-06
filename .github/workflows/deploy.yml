@@ -1,22 +1,40 @@
-name: Push directory to another azure repository
-on:
+name: Sync From Git To Azure
+
+on: 
   push:
-    branches:
-      - '*' # applies for all branches in github.
-      - '!master' # This line is used to restrict this pipeline which won't triggers for master branch. remove this if you need to trigger for code push in master branch (Create PR if needed in devops repos)
+    branches: [master]
+    
 jobs:
-  check-bats-version:
+  sync_from_git_to_azure:
     runs-on: ubuntu-latest
-    environment: AZUREPAT
     steps:
     - uses: actions/checkout@v2
-    - name: Run script file
-      env:
-        AZUREPAT: ${{secrets.AZUREPAT}} # calling secrets from environment variables
-        AZUSERNAME: ${{secrets.AZUSERNAME}}
-        AZUSER_EMAIL: ${{secrets.AZUSER_EMAIL}}
-        AZORG: ${{secrets.AZORG}}
+    - name: Setup environment variables
       run: |
-         chmod +x ./commit.sh
-         ./commit.sh # it will calls 'commit.sh' file. Thats where our logic is in.
-      shell: bash
+        echo ::set-env name=AZUREPAT::${{ secrets.AZUREPAT }}
+        echo ::set-env name=AZUSERNAME::${{ secrets.AZUSERNAME }}
+        echo ::set-env name=AZUSER_EMAIL::${{ secrets.AZUSER_EMAIL }}
+        echo ::set-env name=AZORG::${{ secrets.AZORG }}
+    - name: Git clone repo
+      run: |
+        git clone https://github.com/dariemcarlosdev/eHandbookApp.git
+        cd reponame
+        rm -rf .git
+    - name: Clone to Azure DevOps Repo
+      run: |
+        cd ..
+        GIT_CMD_REPOSITORY="https://MDPCS@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp" 
+        git clone $GIT_CMD_REPOSITORY
+    - name: Copy files from git repro to azure repro
+      run: |
+        cp -r eHandbookApp/* eHandbookApp/
+    - name: Configure user in azure repro
+      run: |
+        cd eHandbookApp
+        git config --global user.email "$AZUSER_EMAIL"
+        git config --global user.name "$AZUSERNAME"
+    - name: Commit and Push to azure
+      run: |
+        git add .
+        git commit -m "sync from git to azure"
+        git push
