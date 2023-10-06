@@ -5,11 +5,6 @@ AZUSERNAME=$AZUSERNAME
 AZUSER_EMAIL=$AZUSER_EMAIL
 AZORG=$AZORG
 
-echo ${{vars.AZUREPAT}}
-echo ${{vars.AZUSERNAME}}
-echo ${{vars.AZUSER_EMAIL}}
-echo ${{vars.AZORG}}
-
 # Remove Git information (for fresh git start)
 rm -rf eHandbookApp/.git
 
