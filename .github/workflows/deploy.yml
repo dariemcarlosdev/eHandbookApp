@@ -21,7 +21,7 @@ jobs:
     - name: Git clone repo
       run: |
         git clone https://github.com/dariemcarlosdev/eHandbookApp.git
-        cd reponame
+        cd eHandbookApp
         rm -rf .git
     - name: Clone to Azure DevOps Repo
       run: |
