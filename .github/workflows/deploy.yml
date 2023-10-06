@@ -2,7 +2,9 @@ name: Sync From Git To Azure
 
 on: 
   push:
-    branches: [master]
+    branches:
+      - '*' # applies for all branches in github.
+      - '!master' # This line is used to restrict this pipeline which won't triggers 
     
 jobs:
   sync_from_git_to_azure:
