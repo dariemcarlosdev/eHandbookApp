@@ -30,7 +30,7 @@ jobs:
         git clone $GIT_CMD_REPOSITORY
     - name: Copy files from git repro to azure repro
       run: |
-        cp -r eHandbookApp/* eHandbookApp/
+        cp -r eHandbookAppa/* eHandbookApp/
     - name: Configure user in azure repro
       run: |
         cd eHandbookApp
