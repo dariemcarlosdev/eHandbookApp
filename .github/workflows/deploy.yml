@@ -12,11 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup environment variables
-      run: |
-        echo ::set-env name=AZUREPAT::${{ secrets.AZUREPAT }}
-        echo ::set-env name=AZUSERNAME::${{ secrets.AZUSERNAME }}
-        echo ::set-env name=AZUSER_EMAIL::${{ secrets.AZUSER_EMAIL }}
-        echo ::set-env name=AZORG::${{ secrets.AZORG }}
+      env:
+        AZUREPAT: ${{secrets.AZUREPAT}} # calling secrets from environment variables
+        AZUSERNAME: ${{secrets.AZUSERNAME}}
+        AZUSER_EMAIL: ${{secrets.AZUSER_EMAIL}}
+        AZORG: ${{secrets.AZORG}}
     - name: Git clone repo
       run: |
         git clone https://github.com/dariemcarlosdev/eHandbookApp.git
