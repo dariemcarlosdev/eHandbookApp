@@ -1,46 +1,22 @@
-name: Sync From Git To Azure
-on: 
+name: Push github directory to another azure devops repository
+on:
   push:
     branches:
-      - '*'
-      #- '!master' # This line is used to restrict this pipeline which won't triggers 
-    
+      - '*' # applies for all branches in github.
+      - '!master' # This line is used to restrict this pipeline which won't triggers for master branch. remove this if you need to trigger for code push in master branch (Create PR if needed in devops repos)
 jobs:
-  sync_from_git_to_azure:
+  check-bats-version:
     runs-on: ubuntu-latest
-    environment: AZUREPAT
+    environment: develop # mention that environment name that what we have created in step 1.
     steps:
     - uses: actions/checkout@v2
-    - name: Setup environment variables
-      run: |   
+    - name: Run script file
       env:
         AZUREPAT: ${{secrets.AZUREPAT}} # calling secrets from environment variables
         AZUSERNAME: ${{secrets.AZUSERNAME}}
         AZUSER_EMAIL: ${{secrets.AZUSER_EMAIL}}
         AZORG: ${{secrets.AZORG}}
-    - name: Git clone repo
       run: |
-        git clone https://github.com/dariemcarlosdev/eHandbookApp.git
-        cd eHandbookApp
-        rm -rf .git
-    - name: Clone to Azure DevOps Repo
-      run: |
-        cd ..
-        AT="x6nlixaf7q4enanndhjoiwvbqmyuyygoqyfes7epdwdib4u5mlaq"
-        REPO_URL="https://$AZUREPAT$@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa"
-        git clone $REPO_URL
-        #GIT_CMD_REPOSITORY="https://x6nlixaf7q4enanndhjoiwvbqmyuyygoqyfes7epdwdib4u5mlaq@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa" 
-        #git clone $GIT_CMD_REPOSITORY
-    - name: Copy files from git repro to azure repro
-      run: |
-        cp -r eHandbookAppa/ eHandbookApp/
-    - name: Configure user in azure repro
-      run: |
-        cd eHandbookApp
-        git config --global user.email "$AZUSER_EMAIL"
-        git config --global user.name "$AZUSERNAME"
-    - name: Commit and Push to azure
-      run: |
-        git add .
-        git commit -m "sync from git to azure"
-        git push
+         chmod +x ./commit.sh
+         ./commit.sh # it will calls 'commit.sh' file. Thats where our logic is in.
+      shell: bash
