@@ -26,11 +26,11 @@ jobs:
     - name: Clone to Azure DevOps Repo
       run: |
         cd ..
-        GIT_CMD_REPOSITORY="https://335286:qv2zagvubsovsyioeuzn335qx6owgmlvsqt4awrplmwmbdy57zfq@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa" 
+        GIT_CMD_REPOSITORY="https://335286:cegktmeytot4qzpfjcfbkrpbck4oizaamz7d3c74iyszat7pvija@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa" 
         git clone $GIT_CMD_REPOSITORY
     - name: Copy files from git repro to azure repro
       run: |
-        cp -r eHandbookAppa/* eHandbookApp/
+        cp -r eHandbookAppa/ eHandbookApp/
     - name: Configure user in azure repro
       run: |
         cd eHandbookApp
