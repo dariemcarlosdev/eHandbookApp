@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup environment variables
+      run: |   
       env:
         AZUREPAT: ${{secrets.AZUREPAT}} # calling secrets from environment variables
         AZUSERNAME: ${{secrets.AZUSERNAME}}
