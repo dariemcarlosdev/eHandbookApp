@@ -10,7 +10,7 @@ rm -rf eHandbookApp/.git
 git fetch --unshallow
 
 # Pull changes from Azure DevOps if its exiting branch and have commits on it
-git pull https://335286@dadeschools.net:twoy32zpktxakmuyzzvhvcopvfc25w3t7mglbcwuarzomfhdu4fa@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp.git
+git pull https://335286@dadeschools.net:twoy32zpktxakmuyzzvhvcopvfc25w3t7mglbcwuarzomfhdu4fa@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp
 
 #git checkout -b $github_to_azure_sync
 
@@ -21,4 +21,4 @@ git config --global user.name "335286@dadeschools.net"
 # Add all changes into stage, commit, and push to Azure DevOps
 git add .
 git commit -m "Sync from GitHub to Azure DevOps"
-git push --force https://335286@dadeschools.net:twoy32zpktxakmuyzzvhvcopvfc25w3t7mglbcwuarzomfhdu4fa@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp.git
+git push --force https://335286@dadeschools.net:twoy32zpktxakmuyzzvhvcopvfc25w3t7mglbcwuarzomfhdu4fa@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp
