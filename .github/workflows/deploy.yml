@@ -27,7 +27,7 @@ jobs:
       run: |
         cd ..
         AT="x6nlixaf7q4enanndhjoiwvbqmyuyygoqyfes7epdwdib4u5mlaq"
-        REPO_URL="https://$AT@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa"
+        REPO_URL="https://$AZUREPAT$@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa"
         git clone $REPO_URL
         #GIT_CMD_REPOSITORY="https://x6nlixaf7q4enanndhjoiwvbqmyuyygoqyfes7epdwdib4u5mlaq@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa" 
         #git clone $GIT_CMD_REPOSITORY
