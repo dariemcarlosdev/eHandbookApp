@@ -1,5 +1,4 @@
 name: Sync From Git To Azure
-
 on: 
   push:
     branches:
@@ -9,6 +8,7 @@ on:
 jobs:
   sync_from_git_to_azure:
     runs-on: ubuntu-latest
+    environment: AZUREPAT
     steps:
     - uses: actions/checkout@v2
     - name: Setup environment variables
