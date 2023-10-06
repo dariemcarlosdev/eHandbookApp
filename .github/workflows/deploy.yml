@@ -26,8 +26,12 @@ jobs:
     - name: Clone to Azure DevOps Repo
       run: |
         cd ..
-        GIT_CMD_REPOSITORY="https://x6nlixaf7q4enanndhjoiwvbqmyuyygoqyfes7epdwdib4u5mlaq@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa" 
-        git clone $GIT_CMD_REPOSITORY
+        AT="x6nlixaf7q4enanndhjoiwvbqmyuyygoqyfes7epdwdib4u5mlaq"
+        REPO_URL="https://MDPCS@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa"
+        AUTH=$(echo -n ":AT" | openssl base64 | tr -d '\n')
+        git -c http.$REPO_URL.extraheader="Authorization: Basic $AUTH" clone $REPO_URL
+        #GIT_CMD_REPOSITORY="https://x6nlixaf7q4enanndhjoiwvbqmyuyygoqyfes7epdwdib4u5mlaq@dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa" 
+        #git clone $GIT_CMD_REPOSITORY
     - name: Copy files from git repro to azure repro
       run: |
         cp -r eHandbookAppa/ eHandbookApp/
