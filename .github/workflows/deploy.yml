@@ -26,7 +26,7 @@ jobs:
     - name: Clone to Azure DevOps Repo
       run: |
         cd ..
-        GIT_CMD_REPOSITORY="https://MDPCS@dev.azure.com/MDPCS/eHandBook/_git/eHandbookApp" 
+        GIT_CMD_REPOSITORY="https://dev.azure.com/MDPCS/eHandBook/_git/eHandbookAppa" 
         git clone $GIT_CMD_REPOSITORY
     - name: Copy files from git repro to azure repro
       run: |
