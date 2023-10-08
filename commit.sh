@@ -21,6 +21,9 @@ git config --global user.email "$AZUSER_EMAIL"
 git config --global user.name "$AZUSERNAME"
 
 # Add all changes into stage, commit, and push to Azure DevOps
+git clone --bare https://github.com/dariemcarlosdev/eHandbookApp.git
+cd https://github.com/dariemcarlosdev/eHandbookApp.git
 git add .
 git commit -m "Sync from GitHub to Azure DevOps"
-git push --all --force https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
+#git push --force https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
+git push --mirror https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
