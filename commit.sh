@@ -23,4 +23,4 @@ git config --global user.name "$AZUSERNAME"
 # Add all changes into stage, commit, and push to Azure DevOps
 git add .
 git commit -m "Sync from GitHub to Azure DevOps"
-git push --force https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
+git push --all --force https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
