@@ -1,8 +1,8 @@
 name: Push github directory to another azure devops repository
 on:
   push:
-    branches: '**' # applies for all branches in github.
-      #- '!master' # This line is used to restrict this pipeline which won't triggers for master branch. remove this if you need to trigger for code push in master branch (Create PR if needed in devops repos)
+    branches: ["Develop-Deploy","Staging"]
+    #- '!master' # This line is used to restrict this pipeline which won't triggers for master branch. remove this if you need to trigger for code push in master branch (Create PR if needed in devops repos)
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
