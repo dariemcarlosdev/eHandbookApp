@@ -12,7 +12,7 @@ rm -rf eHandbookApp/.git
 git fetch --unshallow
 
 # Pull changes from Azure DevOps if its exiting branch and have commits on it
-# git pull https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
+# git pull https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookApp
 
 #git checkout -b $github_to_azure_sync
 
@@ -25,7 +25,7 @@ git clone --bare https://github.com/dariemcarlosdev/eHandbookApp.git
 cd eHandbookApp.git
 git add .
 git commit -m "Sync from GitHub to Azure DevOps"
-#git push --force https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
-git push --mirror https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookAppa
+#git push --force https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookApp
+git push --mirror https://$AZUREPAT@dev.azure.com/$AZORG/eHandBook/_git/eHandbookApp
 cd ..
 rm -rf eHandbookApp.git
