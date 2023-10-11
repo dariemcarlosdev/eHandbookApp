@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\eHandBookApp.api.props" />
-</Project>

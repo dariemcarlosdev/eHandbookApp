@@ -7,14 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rsc", "rsc", "{EDEFA6A1-370
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{90DC800E-99BA-4A26-A210-B35E794D978B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eHandBookApp.api", "rsc\eHandBookApp.api\eHandBookApp.api.csproj", "{112E76A2-9893-4553-BF17-289F526AA828}"
-EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5269C99A-90E3-48B1-8F43-D7F92A05C2AA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F850346-C318-4178-B8D1-F65E5F35EF3C}"
-	ProjectSection(SolutionItems) = preProject
-		azure-pipelines.yml = azure-pipelines.yml
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eHandBookApp.API", "rsc\API\eHandBookApp.API\eHandBookApp.API.csproj", "{11E00B5B-AE2E-435E-B93D-5493E92690ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,21 +15,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{112E76A2-9893-4553-BF17-289F526AA828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{112E76A2-9893-4553-BF17-289F526AA828}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{112E76A2-9893-4553-BF17-289F526AA828}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{112E76A2-9893-4553-BF17-289F526AA828}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5269C99A-90E3-48B1-8F43-D7F92A05C2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5269C99A-90E3-48B1-8F43-D7F92A05C2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5269C99A-90E3-48B1-8F43-D7F92A05C2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5269C99A-90E3-48B1-8F43-D7F92A05C2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E00B5B-AE2E-435E-B93D-5493E92690ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E00B5B-AE2E-435E-B93D-5493E92690ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E00B5B-AE2E-435E-B93D-5493E92690ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E00B5B-AE2E-435E-B93D-5493E92690ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{90DC800E-99BA-4A26-A210-B35E794D978B} = {EDEFA6A1-370A-4BAC-915A-9DD0BCCDD2A8}
-		{112E76A2-9893-4553-BF17-289F526AA828} = {90DC800E-99BA-4A26-A210-B35E794D978B}
+		{11E00B5B-AE2E-435E-B93D-5493E92690ED} = {90DC800E-99BA-4A26-A210-B35E794D978B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F1D9803-C70D-4B63-9F6F-91B8BB6A5E00}
