@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zUFSJp2D3ljVCGn++kUfIbkULGWF3taA++aFwy6qMzvqF8JBiUn5EqNP/wa2eZ/42A7f8usRzbLKmu6GKhIAjA==",
+  "dgSpecHash": "jjIJipCtTaYfcWxlV4hhe0tDkQfvD5aaQSbfpWVffB9XgHKnb/5mbzd7Rrh3awUdi8hOSmjA6mEEhS0xQ48NjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandBookApp\\eHandBookApp.api\\eHandBookApp.api.csproj",
+  "projectFilePath": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandbookApp\\rsc\\eHandBookApp.api\\eHandBookApp.api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\335286\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\335286\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

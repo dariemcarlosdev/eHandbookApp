@@ -7,6 +7,7 @@
     <UserSecretsId>aspnet-eHandBookApp.api-468c5353-b5b2-4542-8038-e700b0397051</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>

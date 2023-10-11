@@ -4049,11 +4049,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandBookApp\\eHandBookApp.api\\eHandBookApp.api.csproj",
+      "projectUniqueName": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandbookApp\\rsc\\eHandBookApp.api\\eHandBookApp.api.csproj",
       "projectName": "eHandBookApp.api",
-      "projectPath": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandBookApp\\eHandBookApp.api\\eHandBookApp.api.csproj",
+      "projectPath": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandbookApp\\rsc\\eHandBookApp.api\\eHandBookApp.api.csproj",
       "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandBookApp\\eHandBookApp.api\\obj\\",
+      "outputPath": "C:\\Users\\335286\\Documents\\WORK\\PROJECTS\\EHANDBOOK.APP\\eHandbookApp\\rsc\\eHandBookApp.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
