@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rsc", "rsc", "{F9FADAE3-CD7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "rsc\ClassLibrary1\ClassLibrary1.csproj", "{2D118534-796B-40AD-854A-1E22DD9C88FE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootstrapper", "rsc\Bootstrapper\Bootstrapper.csproj", "{05C71ED1-6A22-491C-858B-881AC2062F5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{2D118534-796B-40AD-854A-1E22DD9C88FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D118534-796B-40AD-854A-1E22DD9C88FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D118534-796B-40AD-854A-1E22DD9C88FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C71ED1-6A22-491C-858B-881AC2062F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C71ED1-6A22-491C-858B-881AC2062F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C71ED1-6A22-491C-858B-881AC2062F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C71ED1-6A22-491C-858B-881AC2062F5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B86E873A-F2D5-4527-AF3A-702027DCBE7B} = {F9FADAE3-CD79-4831-84B2-D8C88B07154F}
 		{2D118534-796B-40AD-854A-1E22DD9C88FE} = {F9FADAE3-CD79-4831-84B2-D8C88B07154F}
+		{05C71ED1-6A22-491C-858B-881AC2062F5F} = {F9FADAE3-CD79-4831-84B2-D8C88B07154F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F1D9803-C70D-4B63-9F6F-91B8BB6A5E00}

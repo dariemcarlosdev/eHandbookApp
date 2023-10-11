@@ -1,0 +1,11 @@
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\bin\Debug\net7.0\Bootstrapper.deps.json
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\bin\Debug\net7.0\Bootstrapper.dll
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\bin\Debug\net7.0\Bootstrapper.pdb
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\Bootstrapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\Bootstrapper.AssemblyInfoInputs.cache
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\Bootstrapper.AssemblyInfo.cs
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\Bootstrapper.csproj.CoreCompileInputs.cache
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\Bootstrapper.dll
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\refint\Bootstrapper.dll
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\Bootstrapper.pdb
+C:\Users\335286\Documents\WORK\PROJECTS\EHANDBOOK.APP\eHandbookApp\rsc\Bootstrapper\obj\Debug\net7.0\ref\Bootstrapper.dll
