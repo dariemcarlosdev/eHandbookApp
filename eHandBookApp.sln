@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eHandBookApp.api", "eHandBookApp.api\eHandBookApp.api.csproj", "{B86E873A-F2D5-4527-AF3A-702027DCBE7B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{89DA9E1B-4748-4173-B5A7-FA8F8C23389B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B7DBF97-40D6-418F-BED4-ED74CFD97BD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rsc", "rsc", "{F9FADAE3-CD79-4831-84B2-D8C88B07154F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B86E873A-F2D5-4527-AF3A-702027DCBE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86E873A-F2D5-4527-AF3A-702027DCBE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86E873A-F2D5-4527-AF3A-702027DCBE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86E873A-F2D5-4527-AF3A-702027DCBE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DA9E1B-4748-4173-B5A7-FA8F8C23389B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DA9E1B-4748-4173-B5A7-FA8F8C23389B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DA9E1B-4748-4173-B5A7-FA8F8C23389B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DA9E1B-4748-4173-B5A7-FA8F8C23389B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F1D9803-C70D-4B63-9F6F-91B8BB6A5E00}
+	EndGlobalSection
+EndGlobal
