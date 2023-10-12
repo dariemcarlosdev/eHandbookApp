@@ -7,16 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rsc", "rsc", "{EDEFA6A1-370
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{90DC800E-99BA-4A26-A210-B35E794D978B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eHandBookApp.API", "rsc\API\eHandBookApp.API\eHandBookApp.API.csproj", "{11E00B5B-AE2E-435E-B93D-5493E92690ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eHandBookApp.API", "rsc\API\eHandBookApp.API\eHandBookApp.API.csproj", "{11E00B5B-AE2E-435E-B93D-5493E92690ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eHandBookApp.Bootstrapper", "rsc\Bootstrapper\eHandBookApp.Bootstrapper\eHandBookApp.Bootstrapper.csproj", "{61B3EEB2-2F8F-45AF-8E60-8E51C207AD1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eHandBookApp.Bootstrapper", "rsc\Bootstrapper\eHandBookApp.Bootstrapper\eHandBookApp.Bootstrapper.csproj", "{61B3EEB2-2F8F-45AF-8E60-8E51C207AD1D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{0D633095-3D6F-47FD-A3F5-50684FDF90BB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84BD494D-5486-41B7-9749-AFCCD58211DB}"
-	ProjectSection(SolutionItems) = preProject
-		.dockerignore = .dockerignore
-	EndProjectSection
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{32EF1BCF-A997-4DC2-930C-2810595D3BDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +29,10 @@ Global
 		{61B3EEB2-2F8F-45AF-8E60-8E51C207AD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61B3EEB2-2F8F-45AF-8E60-8E51C207AD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61B3EEB2-2F8F-45AF-8E60-8E51C207AD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EF1BCF-A997-4DC2-930C-2810595D3BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EF1BCF-A997-4DC2-930C-2810595D3BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EF1BCF-A997-4DC2-930C-2810595D3BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EF1BCF-A997-4DC2-930C-2810595D3BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
